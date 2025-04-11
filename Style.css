@@ -129,3 +129,17 @@ footer a {
   opacity: 1;
   transform: translateY(0);
 }
+.resume-btn {
+  display: inline-block;
+  background-color: #28a745;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  margin-top: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.resume-btn:hover {
+  background-color: #218838;
+}
