@@ -1,0 +1,144 @@
+/* Smooth scroll */
+html {
+  scroll-behavior: smooth;
+}
+
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+/* Dark Mode - Apply to entire body */
+body.dark-mode {
+  background-color: #222;
+  color: #eee;
+}
+
+/* Header */
+header {
+  background-color: #0077cc;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+body.dark-mode header,
+body.dark-mode footer {
+  background-color: #111;
+}
+
+body.dark-mode section {
+  background-color: #333;
+  color: #eee;
+}
+
+/* Typing Cursor */
+#typing-text::after {
+  content: '|';
+  animation: blink 1s infinite;
+}
+
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+
+/* Sections */
+section {
+  padding: 20px;
+  margin: 20px;
+  background-color: white;
+  border-radius: 10px;
+}
+
+body.dark-mode section {
+  background-color: #333;
+  color: #eee;
+}
+
+/* Resume Button */
+.resume-btn {
+  display: inline-block;
+  background-color: #28a745;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  margin-top: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.resume-btn:hover {
+  background-color: #218838;
+}
+
+/* Skills List */
+.skills ul {
+  list-style-type: square;
+  padding-left: 20px;
+}
+
+/* Form Styling */
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+input, textarea {
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+body.dark-mode input,
+body.dark-mode textarea {
+  background-color: #444;
+  color: white;
+  border: 1px solid #666;
+}
+
+button[type="submit"] {
+  background-color: #0077cc;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button[type="submit"]:hover {
+  background-color: #005fa3;
+}
+
+/* Footer */
+footer {
+  background-color: #0077cc;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  border-radius: 10px;
+  margin-top: 30px;
+}
+
+footer a {
+  color: #fff;
+  text-decoration: underline;
+  margin: 0 5px;
+}
+
+/* Scroll Animation */
+.fade-in-scroll {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.8s ease-in-out;
+}
+
+.fade-in-scroll.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
