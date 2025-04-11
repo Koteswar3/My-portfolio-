@@ -129,6 +129,18 @@ footer a {
   opacity: 1;
   transform: translateY(0);
 }
+footer a {
+  color: white;
+  text-decoration: none;
+  margin: 0 5px;
+}
+
+footer a:hover {
+  color: #28a745;
+}
+footer i {
+  margin-right: 5px;
+}
 .resume-btn {
   display: inline-block;
   background-color: #28a745;
